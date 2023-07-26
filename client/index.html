@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+</head>
+<body >
+  <header id="main-header" class="bg-light p-4 mb-3">
+    <div class="container">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-md-6 d-flex justify-content-center align-items-center">
+            <h1 id="header-title" class="text-dark"><span class="text-danger">E</span>xpense <span class="text-danger">  T</span>racker</h1>
+        </div>
+        
+      </div>
+    </div>
+  </header>
+  <div class="container">
+   <div id="main" class="card card-body">
+    <h2 class="title"></h2>
+    <form id="expenseForm" class="form-inline mb-3">
+      <input type="text" class="form-control mr-2" id="expenseAmount" placeholder="choose expense amount">
+      <input type="text" class="form-control mr-2" id="expenseDescription" placeholder="choose description">
+      <label for="expenseCategory" class="mr-2">Choose a category:</label>
+      <select class="form-control mr-2" id="expenseCategory" placeholder="choose a category">
+        <option>Food</option>
+        <option>Transportation</option>
+        <option>Entertainment</option>
+        <option>Music</option>
+        <option>Other</option>
+      </select>
+      
+      <input type="submit" class="btn btn-dark ml-5" value="Add Expense">
+    </form>
+  
+      
+     
+
+    <div>
+      <ul id="expenseList" class="list-group mt-3"></ul>
+    </div>
+    
+   </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
+
